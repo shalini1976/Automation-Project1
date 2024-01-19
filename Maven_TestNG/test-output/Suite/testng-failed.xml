@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Groups(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="AnnotationTestNG.AssignmentThree">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="clickPracticeForm"/>
+          <include name="clickForm"/>
+          <include name="enterData"/>
+        </methods>
+      </class> <!-- AnnotationTestNG.AssignmentThree -->
+    </classes>
+  </test> <!-- Groups(failed) -->
+</suite> <!-- Failed suite [Suite] -->
